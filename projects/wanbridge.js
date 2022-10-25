@@ -25,7 +25,7 @@ getChains().then(() => {
         let total = 0;
         minted.map(v=>total += Number(v.quantity * v.price));
         if (chain === 'wanchain') {
-          total += Number(ret.stake);
+          // total += Number(ret.stake);
         }
         return toUSDTBalances(total);
       }
